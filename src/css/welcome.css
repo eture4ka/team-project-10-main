@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #d4c4b0;
+    color: #2d2520;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 40px;
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.welcome {
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+.content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.description {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #3d342e;
+    margin-bottom: 30px;
+}
+
+.btn-location {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #6b5d54;
+    color: #fff;
+    padding: 14px 28px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-location:hover {
+    background-color: #544940;
+}
+
+.icon-map {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+}
+
+.image-container {
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Адаптивний дизайн */
+@media (max-width: 768px) {
+    .container {
+        padding: 40px 20px;
+    }
+
+    .content-wrapper {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+}

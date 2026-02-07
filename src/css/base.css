@@ -1,0 +1,76 @@
+:root {
+  /* Fonts family */
+    --font-family: 'Quicksand', sans-serif;
+    --second-family: 'Aboreto', sans-serif;
+
+  /* Text colors */
+  --main-text-color: #0b0803;
+  --white-text-color: #fff;
+
+  --placeholder-text-color: rgba(11, 8, 3, 0.6);
+
+  --color-error-red: #7f1c1c;
+  /* background color */
+  --main-bg-color: #e0cbb4;
+  --btn-bg-color: #6f4e37;
+  --cards-bg-color: #c29d84;
+
+  /* Shadow color */
+  --opacity-neutral-darkest-5: rgba(11, 8, 3, 0.05);
+  --opacity-neutral-darkest-15: rgba(11, 8, 3, 0.15);
+  --opacity-white-5: rgba(255, 255, 255, 0.05);
+
+  /* Icons colors */
+  --main-icon-color: #0b0803;
+  --white-icon-color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  
+  min-width: 100vw;
+  min-height: 100vh;
+  
+  margin: 0;
+
+  color: var(--main-text-color);
+  background-color: var(--main-bg-color);
+}
+
+main {
+  flex: 1;
+}
+
+section {
+  padding: 64px 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.title {
+  font-family: var(--second-family);
+  font-size: 48px;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
